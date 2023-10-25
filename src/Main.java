@@ -9,11 +9,10 @@ public class Main {
 
 
 
-        Author author1 = new Author("Достоевский", "Федор");
+        Author author1 = new Author("Достоевский ", "Федор");
         Book book1 = new Book("Записки из Мертвого дома",1860);
         System.out.println("Название: "+book1.getTitle()+" Год издания: "+book1.getAge());
-        System.out.println("Автор: "+author1.getSurname()+author1.getName());
+        System.out.println("Автор:"+author1.getSurname() +author1.getName());
         book1.setAge(1961);
-        System.out.println("Год переиздания " + book1.getAge());
     }
 }
