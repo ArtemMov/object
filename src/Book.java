@@ -1,10 +1,7 @@
 public class Book {
     private String title;
-
-    private Author getSurname, getName;
-
+    private Author author;
     private int age;
-
     public Book(String title, int age) {
         this.title = title;
         this.age = age;
