@@ -1,17 +1,19 @@
+import java.util.Objects;
+
 public class Book {
     private String title;
-    private Author authorName;
+    private Author author;
     private int age;
-    public Book(String title,Author authorName, int age) {
+    public Book(String title,Author author, int age) {
         this.title = title;
-        this.authorName = authorName;
+        this.author = author;
         this.age = age;
     }
     public String getTitle() {
         return this.title;
     }
-    public Author getAuthorName() {
-        return this.authorName;
+    public Author getAuthor() {
+        return this.author;
     }
 
     public int getAge() {
@@ -19,5 +21,27 @@ public class Book {
     }
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return Objects.equals(title, book.title);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(title);
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "title='" + title + '\'' +
+                ", author=" + author +
+                ", age=" + age +
+                '}';
     }
 }
