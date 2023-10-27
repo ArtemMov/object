@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Author{
     private String surname;
     private String name;
