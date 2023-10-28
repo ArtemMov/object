@@ -28,12 +28,12 @@ public class Book {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Book book = (Book) o;
-        return Objects.equals(title, book.title);
+        return age == book.age;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(title);
+        return Objects.hash(age);
     }
 
     @Override
