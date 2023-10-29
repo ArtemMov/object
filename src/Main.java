@@ -6,6 +6,8 @@ public class Main {
         System.out.println("Название: "+book.getTitle()+ login +" Год издания: "+book.getAge());
         System.out.println("Автор:"+login.getSurname() +login.getName());
         System.out.println(book.toString());
+        System.out.println(login.hashCode());
+
 
 
 
